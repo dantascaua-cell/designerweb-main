@@ -1,4 +1,4 @@
-let dia = prompt("Digite o dia da semana /nSendo 1 = Domingo - 7 = Sabado");
+let dia = prompt("Digite o dia da semana: ");
 dia = Number(dia);
 
 if (dia <=0 || dia > 8){
