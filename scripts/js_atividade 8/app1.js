@@ -1,4 +1,5 @@
 let foto = 1;
+
 const imagem = document.getElementById("foto");
 
 function proximo(e) {
@@ -34,7 +35,7 @@ const cbbox = document.getElementById("combobox");
 function selecionar(e) {
     e.preventDefault();
 
-    foto = cbbox.value;
+    foto = Number(cbbox.value);
     imagem.setAttribute("src", `./img/foto${foto}.jpg`);
 }
 
@@ -47,15 +48,25 @@ opacidade.addEventListener("input", function(e) {
     e.preventDefault();
 
     let valor = opacidade.value;
-    imagem.setAttribute("style", `opacity:${valor}`);
+    imagem.style.opacity = valor;
 });
+
 
 const lii = document.getElementById("lii");
+
 lii.addEventListener("mouseover", function(e) {
     e.preventDefault();
-    i = 2;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
+
+    foto = 2;
+    imagem.setAttribute("src", `./img/foto${foto}.jpg`);
 });
 
-const li3 = document.getElementById("lii3")
 
+const li3 = document.getElementById("li3");
+
+li3.addEventListener("dblclick", function(e) {
+    e.preventDefault();
+
+    foto = 3;
+    imagem.setAttribute("src", `./img/foto${foto}.jpg`);
+});
