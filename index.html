@@ -1,46 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 09: Agenda de Contatos</title>
+    <title>Aula 11: Objetos internos</title>
 </head>
+
 <body>
-    <h1>Meus Amigos</h1>
-    <hr/>
-    <form action="#" id="cadastro" method="post">
-        <table>
-            <tr>
-                <td>Nome</td>
-                <td>
-                    <input type="text" required name="nome" minlength="3"/>
-                </td>
-            </tr>
-            <tr>
-                <td>Data de Nascimento</td>
-                <td>
-                    <input type="date" name="nasc"/>
-                </td>
-            </tr>
-            <tr>
-                <td>WhatsApp</td>
-                <td>
-                    <input type="tel" name="whatsapp"/>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Adicionar">
-                    <input type="reset">
-                </td>
-            </tr>
-        </table>
+    <h2>Data: 21/10/2026</h2>
+    <form id="formulario" action="#" method="post">
+        <div>
+            <textarea name="texto" required placeholder="Digite um Valor">
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Extrair tags">
+        </div>
+
+
     </form>
-    <hr/>
-    <ul id="lista">
-        <li>Lista Vazia</li>
-    </ul>
-    <script src="./scripts/js_atividade10/app1.js" defer></script>
+    <div id="tags">
+        não há tags no texto
+    </div>
+    <script src="./app1.js" defer></script>
 </body>
+
 </html>
